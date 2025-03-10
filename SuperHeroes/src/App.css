@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-section {
+  padding: 30px;
+  text-align: center;
+  background: rgba(74, 74, 110, 0.87);
+  color: #ffffff;
+  border-radius: 10px;
+  width: 650px;
+  box-shadow: 0 4px 8px #f5f5f533,0 6px 20px #fdfdfd30;
+  height: 880px;
+  margin: 0 auto;
+  position: relative;
+  left: 30%;
+  transform: translateX(-50%);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.0;
+  font-weight: 700;
+  margin-bottom: 10px;  /* Reduced margin */
+}
+
+h2 {
+  margin-bottom: 5px;  /* Reduced margin */
+}
+
+h5 {
+  margin-bottom: 10px;  /* Added margin */
+}
+
+.hero-card {
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;      /* Removed top margin */
+}
+
+.hero-name {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;  /* Reduced from 10px */
+}
+
+.hero-image-container {
+  text-align: center;
+  margin-bottom: 20px;  /* Reduced from 12px */
+}
+
+.hero-image {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid #fff;
+}
+
+.hero-attributes,
+.powerstats-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: -5px;    /* Reduced from -10px */
+  min-height: 50px;    /* Add fixed minimum height */
+  padding: 8px;        /* Reduced from 10px */
+  width: 100%;         /* Ensure full width */
+}
+
+.info-button,
+.power-button {
+  background-color: hsl(49, 100%, 50%);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 12px 12px;  /* Increased horizontal padding */
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  font-size: 15px;
+  min-width: 150px;    /* Add minimum width */
+  height: 45px;        /* Add fixed height */
+  display: flex;       /* Use flexbox for content alignment */
+  align-items: center;
+  justify-content: center;
+  text-overflow: ellipsis;
+}
+
+.info-button:hover,
+.power-button:hover {
+  background-color: hsl(49, 100%, 39%);
+}
+
+.info-button:active,
+.power-button:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  background-color: hsl(49, 100%, 39%);
+}
+
+.discover-container {
+  margin-top: 10px;     /* Reduced from 20px */
+  margin-bottom: 10px;
+}
+
+.discover-button {
+  background-color: #008cba;
+  color: white;
+  padding: 14px 28px;
+  font-size: 17px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.discover-button:hover {
+  background-color: #00a0d6;
+}
+
+.discover-button:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #007aa1;
+}
+
+.app-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.history-section {
+  background: rgba(74, 74, 110, 0.87);
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  min-height: 900px;
+  color: white;
+  box-shadow: 0 4px 8px #f5f5f533,0 6px 20px #fdfdfd30;
+  position: fixed;
+  left: 100px;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;  /* Reduced gap between items */
+  overflow-y: auto;
+  overflow-x: hidden;  /* Hide horizontal scrollbar */
+  max-height: 820px;  /* Increased from 750px */
+  padding-right: 10px;
+  margin-top: 25px;  /* Added margin top */
+  -ms-overflow-style: none;  /* Hide scrollbar IE and Edge */
+  scrollbar-width: none;     /* Hide scrollbar Firefox */
+}
+
+
+
+.history-item {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 15px;  /* Reduced padding */
+  transition: background-color 0.2s ease;
+}
+
+.history-item:hover {
+  transform: scale(1.10); /* Reduced scale for less blur */
+  transform-origin: center center;
+  will-change: transform; /* Optimizes transform performance */
+}
+
+.history-image {
+  width: 115px;     /* Slightly smaller images */
+  height: 115px;    /* Slightly smaller images */
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1px;
+}
+
+.history-name {
+  font-size: 14px;  /* Slightly smaller font */
+  margin: 5px 0;    /* Reduced margin */
+  font-weight: 600;
+}
+
+
+.banlist-section {
+  background: rgba(74, 74, 110, 0.87);
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  min-height: 900px;
+  color: white;
+  box-shadow: 0 4px 8px #f5f5f533,0 6px 20px #fdfdfd30;
+  position: fixed;
+  right: 100px;
+}
+
+.banlist-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  overflow-y: auto;
+  max-height: 750px;
+  padding-right: 10px;
+}
+
+.ban-item {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ban-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.remove-icon {
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+.ban-item:hover .remove-icon {
+  opacity: 1;
+}
+
+/* Add media queries for responsive design */
+@media screen and (max-width: 1400px) {
+  .history-section {
+    width: 200px;
+  }
+  
+  .banlist-section {
+    width: 200px;
+  }
+  
+  .main-section {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .history-section,
+  .banlist-section {
+    display: none;
+  }
+  
+  .main-section {
+    width: 90%;
+    max-width: 650px;
+    left: 0;
+    transform: none;
+    margin: 0 auto;
+  }
+}
+
+/* Update scrollbar styles for better mobile support */
+@media (hover: none) {
+  .history-list::-webkit-scrollbar,
+  .banlist-container::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+
