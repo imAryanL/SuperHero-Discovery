@@ -44,22 +44,33 @@ An engaging web application that lets users discover random superheroes from a v
 
 ## How to Run
 
-### **Using Live Server (Recommended)**
 
-1. **Install Live Server Extension**:
-   - Open VS Code
-   - Go to Extensions (Ctrl+Shift+X)
-   - Search for "Live Server"
-   - Install the extension by Ritwick Dey
+### **Using Terminal (Recommended)**
 
-2. **Run the Application**:
-   - Right-click on `index.html` in your file explorer
-   - Select "Open with Live Server"
-   - Start discovering superheroes in your browser!
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/imAryanL/superhero-discovery.git
+   cd superhero-discovery
+   ```
 
-### **Direct File Opening**
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-Simply double-click `index.html` to open in your default browser.
+3. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser** and navigate to `http://localhost:5173`
+
+### **Alternative Commands**
+
+If `npm run dev` doesn't work, try:
+```bash
+npm start
+```
 
 ## Architecture
 
@@ -89,14 +100,6 @@ This project demonstrates:
 - **User Experience** - Interactive filtering and session management
 - **Error Handling** - Robust error management for external services
 
-## ⭐ Why This Project Stands Out
-
-- **Real API Integration** - Shows ability to work with external services
-- **Advanced JavaScript** - Demonstrates modern ES6+ features
-- **Professional UX** - Intuitive interface with smart filtering
-- **Responsive Design** - Works perfectly on all device sizes
-- **Complex Logic** - Multi-layered filtering and state management
-- **Production Ready** - Clean, maintainable code structure
 
 ## 📹 Demo Video
 
@@ -105,15 +108,6 @@ Watch the SuperHero Discovery app in action:
 [![SuperHero Discovery Demo](https://cdn.loom.com/sessions/thumbnails/8091a49cb6f049bcae4fa692eb7f3781-47e14c5d12be4a38-full-play.gif)](https://www.loom.com/share/8091a49cb6f049bcae4fa692eb7f3781)
 
 *Click the image above to watch the full video walkthrough*
-
-## 🔮 Future Enhancements
-
-- **Local Storage** - Persist ban list and history across sessions
-- **Advanced Filtering** - Multiple attribute combinations and logic
-- **Search Functionality** - Direct hero search by name or attributes
-- **Favorites System** - Save preferred heroes for later viewing
-- **Social Features** - Share discoveries with friends
-- **Dark Mode** - Toggle between light and dark themes
 
 ## 📱 Browser Compatibility
 
